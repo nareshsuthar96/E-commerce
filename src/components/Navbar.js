@@ -21,7 +21,7 @@ export default function Navbar() {
     dispatch(getCartTotal())
   },[cart])
   return (
-    <MDBNavbar light bgColor='black' >
+    <MDBNavbar light bgColor='black' className='mt-2' >
       <MDBContainer fluid>
         <MDBNavbarBrand><MDBIcon fab icon="accusoft"  style={{fontSize:"35px",color:"white"}} className='NavIcon' /></MDBNavbarBrand>
         <MDBBtn color='light' rippleColor='dark'>

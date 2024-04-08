@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Card from './components/Card'
 import ProductCard from './components/ProductCard'
 import './App.css'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path='/shoppingCart' element={<ProductCard/>}/>
 
         </Routes>
+         <Footer/>
       </Router>
     </div>
   )

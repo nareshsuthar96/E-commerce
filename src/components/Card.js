@@ -29,12 +29,12 @@ export default function Card() {
        
       </MDBRipple>
       <MDBCardBody >
-        <MDBCardTitle >{iteam.title}</MDBCardTitle>
-        <MDBCardText style={{height:"100px"}}>
+        <MDBCardTitle>{iteam.title}</MDBCardTitle>
+        <MDBCardText style={{height:"220px"}}>
           {iteam.description}
         </MDBCardText>
 
-        <h4>Price :- {iteam.price}</h4>
+        <h5>Price :- ₹{iteam.price}</h5>
         <MDBBtn href='#' onClick={()=>dispatch(AddToCart(iteam))}>Add To Cart</MDBBtn>
       </MDBCardBody>
     </MDBCard>

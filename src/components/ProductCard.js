@@ -4,6 +4,7 @@ import {useSelector,useDispatch} from 'react-redux'
 import { getCartTotal ,removeIteam ,increaseIteamQuantity , decreaseIteamQuantity} from '../features/cartSlice'
 const ProductCard = () => {
     const {cart, totalQuantity,totalPrice} = useSelector((state)=>state.allcart)
+    console.log(cart)
 
     const  dispatch = useDispatch()
 
